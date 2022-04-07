@@ -1,0 +1,37 @@
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: calc(100vh - 88px);
+  padding: 0 48px;
+  gap: 24px;
+}
+
+.masthead .masthead-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.masthead .masthead-img {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+}
+
+.masthead .masthead-img .feature-img {
+  width: 100%;
+  height: auto;
+  transform: rotate(-10deg);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

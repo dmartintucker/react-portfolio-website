@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --blue-10: #f1f6f9;
+  --blue-20: #cde4f2;
+  --blue-40: #9ccae6;
+  --blue-60: #6ab0da;
+  --blue-80: #3895ce;
+  --blue-100: #067bc2;
+  --white: #ffffff;
+  --gray-50: #d6d6d6;
+  --gray-80: #50596a;
+  --gray-100: #2c3850;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,6 +27,7 @@ body {
   padding: 0;
   font-size: 100%;
   box-sizing: border-box;
+  list-style: none;
 }
 
 h1 {
@@ -21,28 +35,24 @@ h1 {
   font-weight: 600;
 }
 
-main {
-  display: flex;
-  width: max(50%, 480px);
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  height: calc(80vh - 88px);
-  padding: 0 48px;
-  gap: 12px;
+h3 {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--gray-80);
 }
 
-.img-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: aliceblue;
-  position: absolute;
+p {
+  font-size: 1rem;
+  color: var(--gray-80);
 }
 
-.feature-img {
-  width: min(720px, 75%);
-  height: auto;
-  transform: rotate(-12deg);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+button {
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4c596e;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
